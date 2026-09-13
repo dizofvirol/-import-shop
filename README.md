@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Import Shop</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -17,12 +15,10 @@
     header {
       background: #111;
       color: white;
-      padding: 20px;
+      padding: 22px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-    }
+    header h1 { margin: 0 0 8px; }
     .container {
       max-width: 900px;
       margin: 30px auto;
@@ -30,73 +26,66 @@
     }
     .product {
       background: white;
-      border-radius: 16px;
+      border-radius: 18px;
       padding: 20px;
-      text-align: center;
       box-shadow: 0 5px 20px rgba(0,0,0,.08);
     }
-    .product .image {
-      height: 220px;
+    .image {
+      height: 260px;
+      border-radius: 14px;
       background: #eee;
-      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 70px;
-      margin-bottom: 20px;
+      font-size: 90px;
     }
-    .product h2 {
-      margin: 10px 0;
-    }
+    h2 { margin-bottom: 8px; }
     .price {
-      font-size: 24px;
+      font-size: 25px;
       font-weight: bold;
-      margin: 15px;
+      margin: 20px 0;
     }
     button {
+      width: 100%;
       border: 0;
+      border-radius: 12px;
+      padding: 15px;
       background: #111;
       color: white;
-      padding: 14px 30px;
-      border-radius: 10px;
-      font-size: 16px;
+      font-size: 17px;
       cursor: pointer;
     }
-    button:hover {
-      opacity: .85;
-    }
     #message {
+      text-align: center;
       margin-top: 15px;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🛍️ Import Shop</h1>
-    <p>فروشگاه محصولات وارداتی</p>
-  </header>
-  <main class="container">
-<div class="product">
-  <div class="image">📦</div>
-  <h2>محصول تستی</h2>
-  <p>
-    این اولین محصول فروشگاه Import Shop است.
-  </p>
-  <div class="price">
-    500,000 تومان
+<header>
+  <h1>🛍️ Import Shop</h1>
+  <div>فروشگاه محصولات وارداتی</div>
+</header>
+<main class="container">
+  <div class="product">
+<div class="image">📦</div>
+<h2>محصول وارداتی ویژه</h2>
+<p>
+  یک محصول باکیفیت وارداتی با ارسال سریع.
+</p>
+<div class="price">500,000 تومان</div>
+<button onclick="addToCart()">
+  🛒 افزودن به سبد خرید
+</button>
+<div id="message"></div>
   </div>
-  <button onclick="addToCart()">
-    🛒 افزودن به سبد خرید
-  </button>
-  <div id="message"></div>
-</div>
-  </main>
-  <script>
-    function addToCart() {
-      document.getElementById("message").innerText =
-        "✅ محصول به سبد خرید اضافه شد!";
-    }
-  </script>
+</main>
+<script>
+function addToCart() {
+  document.getElementById("message").textContent =
+    "✅ محصول به سبد خرید اضافه شد";
+}
+</script>
 </body>
 </html>
