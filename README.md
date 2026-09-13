@@ -68,9 +68,12 @@
   <div>فروشگاه محصولات وارداتی</div>
 </header>
 <main class="container">
-  <div class="product">
-<div class="image">📦</div>
-<h2>محصول وارداتی ویژه</h2>
+  <div class="image">
+  <img
+    src="https://placehold.co/600x600.png?text=Import+Shop"
+    alt="محصول Import Shop"
+  >
+</div>/h2>
 <p>
   یک محصول باکیفیت وارداتی با ارسال سریع.
 </p>
@@ -89,3 +92,10 @@ function addToCart() {
 </script>
 </body>
 </html>
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
