@@ -108,3 +108,14 @@ function addToCart() {
 </script>
 </body>
 </html>
+
+<div class="product-image">
+  <img src="watch.jpg" alt="ساعت وارداتی">
+</div>
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
